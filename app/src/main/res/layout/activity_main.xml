@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amrita2015.app.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#ff191970">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="WIDE AWAKE"
+            android:id="@+id/textView"
+            android:textSize="50dp"
+            android:layout_marginLeft="27dp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff" />
+
+        <CheckBox
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:text="Is This Your First Time?"
+            android:id="@+id/checkBox"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:onClick="itemChecked"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/human_brain_icon"
+            android:background="@drawable/human_brain_icon"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="145dp"
+            android:layout_marginRight="30dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/mic_button"
+            android:background="@drawable/mic_icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="145dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/balance_button"
+            android:background="@drawable/balance_icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="145dp" />
+
+        <Button
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Check Results"
+            android:id="@+id/results"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.06"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</FrameLayout>
